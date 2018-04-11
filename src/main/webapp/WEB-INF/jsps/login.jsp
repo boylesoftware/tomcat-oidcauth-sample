@@ -31,7 +31,7 @@
         <p>This is the list of configured OPs. Choose one to proceed to the login page provided by the OP.</p>
         <ul>
           <c:forEach items="${authEndpoints}" var="ep">
-            <li><a href="${ep.url}"><c:out value="${ep.issuer}"/></a></li>
+            <li><a href="${ep.url}"><c:out value="${ep.name}"/></a></li>
           </c:forEach>
         </ul>
       </div>
